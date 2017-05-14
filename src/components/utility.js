@@ -9,7 +9,7 @@ const lines = [
     [2, 4, 6],
 ];
 
-const getWinner = (squares) => {
+export const getWinner = (squares) => {
     for (let i = 0; i < lines.length; i++) {
         const [a, b, c] = lines[i];
         if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
@@ -19,5 +19,3 @@ const getWinner = (squares) => {
 
     return null;
 };
-
-export { getWinner }
